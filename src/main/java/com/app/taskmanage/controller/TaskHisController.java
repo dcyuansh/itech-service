@@ -44,7 +44,7 @@ public class TaskHisController extends BaseController {
             List<DataModel> userModel = taskHisService.queryCommTaskHis(queryModel);
             this.handleSuccess(userModel, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }

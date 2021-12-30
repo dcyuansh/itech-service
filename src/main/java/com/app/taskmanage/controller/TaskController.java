@@ -44,7 +44,7 @@ public class TaskController extends BaseController {
             taskService.saveCommTask(saveModel);
             this.handleSuccess(resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -65,7 +65,7 @@ public class TaskController extends BaseController {
             List<DataModel> userModel = taskService.queryCommTask(queryModel);
             this.handleSuccess(userModel, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -85,7 +85,7 @@ public class TaskController extends BaseController {
             List<DataModel> userModel = taskService.queryCommTask(queryModel);
             this.handleSuccess(userModel, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -106,7 +106,7 @@ public class TaskController extends BaseController {
             taskService.deleteCommTask(deleteModel);
             this.handleSuccess(null, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -127,7 +127,7 @@ public class TaskController extends BaseController {
             taskService.updateCommTask(updateModel);
             this.handleSuccess(null, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }

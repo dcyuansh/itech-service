@@ -45,7 +45,7 @@ public class TimeSheetController extends BaseController {
             timeSheetService.saveTimeSheet(saveModel);
             this.handleSuccess(resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -67,7 +67,7 @@ public class TimeSheetController extends BaseController {
             List<DataModel> userModel = timeSheetService.queryTimeSheetList(queryModel);
             this.handleSuccess(userModel, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -86,7 +86,7 @@ public class TimeSheetController extends BaseController {
             DataModel userModel = timeSheetService.queryTimeSheetById(queryModel);
             this.handleSuccess(userModel, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -107,7 +107,7 @@ public class TimeSheetController extends BaseController {
             timeSheetService.deleteTimeSheet(deleteModel);
             this.handleSuccess(null, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
@@ -128,7 +128,7 @@ public class TimeSheetController extends BaseController {
             timeSheetService.updateTimeSheet(updateModel);
             this.handleSuccess(null, resultModel);
         } catch (ValidationException ve) {
-            this.handleValidationExcpetion(ve, resultModel);
+            this.handleValidationException(ve, resultModel);
         } catch (Exception e) {
             this.handleException(e, resultModel);
         }
