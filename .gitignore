@@ -2,17 +2,11 @@ logs/*
 *.class
 */target/*
 target/*
-.idea\libraries\*
-.idea/workspace.xml
-.idea/libraries/*
-.idea/uiDesigner.xml
-.idea/misc.xml
-.idea/itech-service.iml
-.idea/misc.xml
+/.idea/
+.idea/*
 .settings/*
 HELP.md
 .factorypath
 .classpath
 itech-service.iml
-
 

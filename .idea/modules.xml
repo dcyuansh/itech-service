@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../app-core/app-core.iml" filepath="$PROJECT_DIR$/../app-core/app-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/itech-service.iml" filepath="$PROJECT_DIR$/itech-service.iml" />
     </modules>
   </component>

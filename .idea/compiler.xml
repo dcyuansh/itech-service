@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="app-core" />
         <module name="itech-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app-core" target="11" />
       <module name="itech-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app-core" options="-parameters" />
       <module name="itech-service" options="-parameters" />
     </option>
   </component>
