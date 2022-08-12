@@ -37,9 +37,9 @@
         <dependency>
             <groupId>com</groupId>
             <artifactId>app-core</artifactId>
-            <version>22.01.04</version>
+            <version>22.08.12</version>
             <scope>system</scope>
-            <systemPath>${pom.basedir}/src/lib/app-core-22.01.04.jar</systemPath>
+            <systemPath>${pom.basedir}/src/lib/app-core-22.08.12.jar</systemPath>
         </dependency>
 
         <!-- spring boot configuration -->
@@ -88,7 +88,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
-
 
         <!-- security configuration -->
         <dependency>
