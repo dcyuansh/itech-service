@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,13 +12,22 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="app-core" target="11" />
-      <module name="itech-service" target="11" />
+      <module name="app-cloud" target="11" />
+      <module name="app-common" target="11" />
+      <module name="app-core" target="1.8" />
+      <module name="app-eureka" target="11" />
+      <module name="app-feign" target="11" />
+      <module name="app-provider" target="11" />
+      <module name="itech-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app-common" options="-parameters" />
       <module name="app-core" options="-parameters" />
+      <module name="app-eureka" options="-parameters" />
+      <module name="app-feign" options="-parameters" />
+      <module name="app-provider" options="-parameters" />
       <module name="itech-service" options="-parameters" />
     </option>
   </component>
