@@ -35,11 +35,13 @@
     <dependencies>
         <!--添加本地jar包依赖-->
         <dependency>
-            <groupId>com</groupId>
+            <groupId>com.app.core</groupId>
             <artifactId>app-core</artifactId>
             <version>22.11.30</version>
+            <!--
             <scope>system</scope>
             <systemPath>${pom.basedir}/src/lib/app-core-22.11.30.jar</systemPath>
+             -->
         </dependency>
 
         <!-- spring boot configuration -->
