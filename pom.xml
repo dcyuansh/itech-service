@@ -270,7 +270,7 @@
                     <include>application.properties</include>
                     <include>statics/**</include>
                     <include>templates/**</include>
-                    <include>mappers/**</include>
+                    <include>mapper/**</include>
                     <include>*.xml</include>
                     <include>*.txt</include>
                     <include>*.keystore</include>
